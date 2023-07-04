@@ -29,6 +29,9 @@ h1 {
   h1 {
     font-size: x-large;
   }
+  body {
+    margin: auto auto;
+  }
 }
 
 .title {
