@@ -30,7 +30,9 @@ h1 {
     font-size: x-large;
   }
   body {
-    margin: auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
