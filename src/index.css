@@ -25,6 +25,12 @@ h1 {
   text-shadow: 1.5px 1.5px grey;
 }
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: x-large;
+  }
+}
+
 .title {
   margin-top: 15px;
   display: flex;
