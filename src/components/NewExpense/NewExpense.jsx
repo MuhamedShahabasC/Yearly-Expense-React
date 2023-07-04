@@ -3,7 +3,7 @@ import ExpenseForm from "./ExpenseForm";
 import Card from "../UI/Card";
 import { useState } from "react";
 
-const NewExpense = (props) => {
+const NewExpense = ({ onAddExpense }) => {
   const [isEditing, setIsEditing] = useState(false);
 
   const saveExpenseDataHandler = (enteredExpenseData) => {
@@ -12,7 +12,7 @@ const NewExpense = (props) => {
       id: Math.random().toString(),
     };
     setIsEditing(false);
-    props.onAddExpense(expenseData);
+    onAddExpense(expenseData);
   };
 
   const startEditingHandler = () => {
@@ -20,8 +20,8 @@ const NewExpense = (props) => {
   };
 
   const stopEditingHandler = () => {
-    setIsEditing(false)
-  }
+    setIsEditing(false);
+  };
 
   return (
     <Card className="new-expense">
